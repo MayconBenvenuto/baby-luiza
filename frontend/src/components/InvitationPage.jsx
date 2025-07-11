@@ -7,7 +7,7 @@ import { Checkbox } from "./ui/checkbox";
 import { Textarea } from "./ui/textarea";
 import { Badge } from "./ui/badge";
 import { Heart, Gift, Camera, MapPin, Clock, Users, Music } from "lucide-react";
-import { mockData } from "../data/mock";
+import { eventConfig } from "../config/eventConfig";
 import CountdownTimer from "./CountdownTimer";
 import PhotoGallery from "./PhotoGallery";
 import GiftSuggestions from "./GiftSuggestions";
@@ -33,12 +33,12 @@ const InvitationPage = () => {
       return;
     }
 
-    // Simular envio (mock data) - depois conectará com backend
+    // Confirmar presença e redirecionar para WhatsApp
     setIsSubmitted(true);
     
-    // Redirecionar para WhatsApp
-    const message = encodeURIComponent("Minha presença está mais do que confirmada na festa de Lulu!! 😍🥰");
-    const whatsappUrl = `https://wa.me/5581958333334?text=${message}`;
+    // Redirecionar para WhatsApp com mensagem personalizada
+    const message = encodeURIComponent(`Olá! Sou ${rsvpData.name} e minha presença está confirmada na festa da Luiza! 🎉 Vou levar ${rsvpData.guestCount} pessoa(s). ${rsvpData.observations ? `Observações: ${rsvpData.observations}` : ''}`);
+    const whatsappUrl = `https://wa.me/${eventConfig.contact.whatsapp}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -57,7 +57,7 @@ const InvitationPage = () => {
           </div>
           
           <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-4">
-            Luiza faz 1 aninho!
+            {eventConfig.title}
           </h1>
           
           <p className="text-xl text-gray-700 mb-6 font-medium">
@@ -67,7 +67,7 @@ const InvitationPage = () => {
           <div className="flex justify-center items-center gap-2 mb-8">
             <Heart className="w-6 h-6 text-pink-500 animate-pulse" />
             <span className="text-lg font-semibold text-pink-600">
-              {mockData.eventDate}
+              {eventConfig.formattedDate}
             </span>
             <Heart className="w-6 h-6 text-pink-500 animate-pulse" />
           </div>
@@ -76,7 +76,7 @@ const InvitationPage = () => {
 
       {/* Countdown Timer */}
       <section className="px-4 py-8">
-        <CountdownTimer targetDate="2025-09-20T15:00:00" />
+        <CountdownTimer targetDate={eventConfig.date} />
       </section>
 
       {/* Event Details */}
@@ -93,7 +93,9 @@ const InvitationPage = () => {
                 <MapPin className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-800">Local:</h3>
-                  <p className="text-gray-600">{mockData.eventLocation}</p>
+                  <p className="text-gray-600">{eventConfig.venue.name}</p>
+                  <p className="text-gray-600">{eventConfig.venue.address}</p>
+                  <p className="text-gray-600">{eventConfig.venue.city}</p>
                 </div>
               </div>
               
@@ -101,7 +103,7 @@ const InvitationPage = () => {
                 <Clock className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-800">Horário:</h3>
-                  <p className="text-gray-600">{mockData.eventTime}</p>
+                  <p className="text-gray-600">{eventConfig.time}</p>
                 </div>
               </div>
             </div>

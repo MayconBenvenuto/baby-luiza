@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Gift } from "lucide-react";
-import { mockData } from "../data/mock";
+import { giftSuggestions } from "../data/contentData";
 
 const GiftSuggestions = () => {
   return (
@@ -17,7 +17,7 @@ const GiftSuggestions = () => {
         </div>
 
         <div className="space-y-4">
-          {mockData.giftSuggestions.map((category, index) => (
+          {giftSuggestions.map((category, index) => (
             <div key={index} className="border-l-4 border-pink-400 pl-4">
               <h3 className="font-semibold text-gray-800 mb-2">{category.category}</h3>
               <div className="flex flex-wrap gap-2">

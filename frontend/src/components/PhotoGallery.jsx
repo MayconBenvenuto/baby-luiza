@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "./ui/card";
 import { Camera } from "lucide-react";
-import { mockData } from "../data/mock";
+import { photoGallery } from "../data/contentData";
 
 const PhotoGallery = () => {
   return (
@@ -16,12 +16,12 @@ const PhotoGallery = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-3">
-          {mockData.photos.map((photo, index) => (
+          {photoGallery.map((photo, index) => (
             <div key={index} className="relative group">
               <div className="aspect-square bg-gradient-to-br from-pink-200 to-purple-200 rounded-lg shadow-md group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-105">
                 <img 
                   src={photo.url} 
-                  alt={photo.caption}
+                  alt={photo.alt || photo.caption}
                   className="w-full h-full object-cover rounded-lg"
                   onError={(e) => {
                     e.target.style.display = 'none';

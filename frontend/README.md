@@ -1,23 +1,48 @@
-# Getting Started with Create React App
+# Baby Luiza - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Página de convite interativa para o primeiro aniversário da Luiza! 🎂✨
 
-## Available Scripts
+## 🚀 Executar o Projeto
 
-In the project directory, you can run:
+### Instalação
+```bash
+npm install
+```
 
-### `npm start`
+### Desenvolvimento
+```bash
+npm start
+# ou
+npm run dev
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Build para Produção
+```bash
+npm run build
+```
 
-### `npm test`
+### Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React 19
+- TailwindCSS  
+- shadcn/ui
+- Lucide React
+- CRACO
+
+## 📱 Funcionalidades
+
+- ⏰ Countdown Timer até o evento
+- 📸 Galeria de fotos interativa
+- 🎁 Sugestões de presentes
+- 🎵 Player de música
+- 📱 Confirmação via WhatsApp
+- 🎨 Design responsivo e moderno
+
+---
+
+Feito com ❤️ para a princesa Luiza!
 
 ### `npm run build`
 
