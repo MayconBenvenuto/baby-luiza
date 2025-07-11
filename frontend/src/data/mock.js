@@ -24,28 +24,28 @@ export const mockData = {
   
   photos: [
     {
-      url: "https://images.unsplash.com/photo-1544776527-0ad46b6ed38a?w=300&h=300&fit=crop",
-      caption: "Primeiro sorriso da Luiza 💕"
+      url: "https://images.unsplash.com/photo-1491013516836-7db643ee125a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxiYWJ5fGVufDB8fHx8MTc1MjI0NTUxNXww&ixlib=rb-4.1.0&q=85&w=300&h=300&fit=crop",
+      caption: "Descobrindo novos brinquedos 🧸"
     },
     {
-      url: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=300&h=300&fit=crop",
-      caption: "Descobrindo o mundo 🌍"
+      url: "https://images.unsplash.com/photo-1533483595632-c5f0e57a1936?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxiYWJ5fGVufDB8fHx8MTc1MjI0NTUxNXww&ixlib=rb-4.1.0&q=85&w=300&h=300&fit=crop",
+      caption: "Sorrisos que encantam 😊"
     },
     {
-      url: "https://images.unsplash.com/photo-1522771930-78848d9293e8?w=300&h=300&fit=crop",
-      caption: "Momentos de carinho 🤗"
+      url: "https://images.pexels.com/photos/459976/pexels-photo-459976.jpeg?w=300&h=300&fit=crop",
+      caption: "Aprendendo a ficar em pé 👶"
     },
     {
-      url: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&h=300&fit=crop",
-      caption: "Diversão garantida! 🎈"
+      url: "https://images.unsplash.com/photo-1609561727271-353219a937bc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxmaXJzdCUyMGJpcnRoZGF5fGVufDB8fHx8MTc1MjI0NTUyM3ww&ixlib=rb-4.1.0&q=85&w=300&h=300&fit=crop",
+      caption: "Primeiro bolo de aniversário 🎂"
     },
     {
-      url: "https://images.unsplash.com/photo-1542367787-1e5b57e3b6a0?w=300&h=300&fit=crop",
-      caption: "Aprendendo a caminhar 👶"
+      url: "https://images.unsplash.com/flagged/photo-1571275460369-dc7c65c85082?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxmaXJzdCUyMGJpcnRoZGF5fGVufDB8fHx8MTc1MjI0NTUyM3ww&ixlib=rb-4.1.0&q=85&w=300&h=300&fit=crop",
+      caption: "Princesa da mamãe 👑"
     },
     {
-      url: "https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=300&h=300&fit=crop",
-      caption: "Hora da soneca 😴"
+      url: "https://images.pexels.com/photos/32902201/pexels-photo-32902201.jpeg?w=300&h=300&fit=crop",
+      caption: "Preparando para o grande dia 🎉"
     }
   ]
 };
