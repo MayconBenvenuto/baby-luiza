@@ -9,13 +9,13 @@ export const eventConfig = {
   // Local do evento
   venue: {
     name: "Salão de Festas Villa Bonita",
-    address: "Rua das Flores, 123 - Jardim Primavera",
-    city: "Recife - PE"
+    address: "Rua Nilson Sabino Pinho 205",
+    city: "Jardim Atlântico"
   },
   
   // Contato para confirmações
   contact: {
-    whatsapp: "5581958333334",
+    whatsapp: "5581995833334",
     message: "Olá! Confirmo minha presença na festa da Luiza! 🎉"
   },
   
